@@ -1,0 +1,195 @@
+
+#header-Accueil {
+	 margin-bottom: 100px;
+}
+
+#Logo-fixe {
+	width: 15%;
+	margin:0 0 10px 0;
+	padding-left: 5%;
+}
+
+#header-Menu {
+	border-bottom: 2px #103D82 solid;
+}
+
+#header-Menu, #header-Menu ul {
+	z-index: 4;
+padding:0;
+margin: 0;
+margin: auto;
+list-style:none;
+text-align:center;
+}
+
+#header-Menu ul {
+	position:absolute;
+}
+
+ul{
+	list-style: none ; 
+}
+
+#header-Menu ul li ul {
+	position:relative;
+}
+
+#header-Menu li{
+display:inline-block;
+position:relative;
+}
+
+
+
+#header-Menu a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color: #103D82;
+font-family:arial;
+}
+
+
+#header-Menu ul li {
+ 	display:none;
+  	 background-color: #ffffff;
+
+ }
+
+#header-Menu ul li ul li a{
+ 	display:none;
+  	 background-color: #ffffff;
+  	 
+ }
+
+
+ #header-Menu li:hover ul li{
+ 	display: block;
+ }
+
+#header-Menu li ul:hover ul li a{
+ display:block;
+
+ }
+
+ #header-Menu  li:hover {
+	background-color: #528FE2;
+
+}
+
+#header-Menu li a:hover {
+ color:#103D82;
+ background-color: #528FE2;
+ border: 1px #103D82 solid; 
+ }
+
+  #header-Menu .bordure > ul {
+ 	 	border: none;
+ }
+
+ #header-Menu .bordure > ul {
+ 	 	border: 1px #103D82 solid;
+ }
+
+
+#IMG {
+width: 100%; 
+}
+
+.IMG_petit {
+	width:5%;
+	float:left;
+	margin-left:10px;
+}
+
+#Menu-rapide {
+	z-index: 4;
+	float: left;
+	position: fixed;
+	margin-left: -17%;
+	margin-top: 25%;
+	writing-mode: vertical-rl;
+}
+
+#Menu-rapide:hover {
+		transform: translate(100%);
+}
+
+#Acces{
+	color: white;
+}
+
+@media all and (max-width: 1200px ){
+content: "\f20e"
+}
+
+
+/*ACCES RAPIDE*/
+
+#Dev-Tourisme-Txt  a {
+	text-decoration: none ;
+	color : #000;
+}
+
+#Dev-Tourisme-Txt li {
+	list-style: none ;
+}
+
+@media screen and (max-width: 1250px) {
+	#Menu-rapide {
+		margin-left: -20%;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	#Menu-rapide {
+		margin-left: -21%;
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+	#Menu-rapide {
+		margin-left: -24%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	#Menu-rapide {
+		margin-left: -25%;
+	}
+
+}
+
+
+@media screen and (max-width: 900px) {
+	#Menu-rapide {
+		margin-left: -29%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	#Menu-rapide {
+		margin-left: -29%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	#Menu-rapide {
+		margin-left: -40%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	#Menu-rapide {
+		margin-left: -55%;
+	}
+
+}
+
+

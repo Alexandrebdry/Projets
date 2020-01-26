@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+}
+/* mon conteneur d'image */
+.conteneur_Images {
+	margin-left: 0;
+  /*max-width: 100vw; 100% largeur de la page, vh c pr la hauteur*/
+  max-height: 100vh;
+/*  height: 30%;
+*/  position: relative; /*position dsle flux normal décalage par rapport à lui même*/
+  margin-top: 3%; /*décale de 3% du bord haut*/
+}
+/* on cache les images */
+.image {
+	z-index: none;
+	/*display: none;*/ /*aucun impact*/
+	height: auto;
+}
+
+img {
+	vertical-align: middle; /*aligne les images verticalement, permet l'immobilisation*/
+	} 
+
+/* boutons click précédent suivant */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* position du bouton précédent à gauche */
+.prev{
+	left: 1.25%;
+}
+/* position du bouton suivant à droite */
+.next {
+  right: 0.5%;
+  border-radius: 3px 0 0 3px;
+}
+/* surligne en rose en survolant*/
+.prev:hover, .next:hover {
+  background-color: pink;
+}
+/*flexbox ima2*/
+.boxFlex{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /*on aligne correctement la phrase*/
+}
+.boxOrange{
+background:orange;
+font-size: 160%; /*taille écriture*/
+width: 12%; 
+height: 2rem;
+padding-top: 5px;
+text-align: center;
+z-index: 3; /*se surperpose à l'image*/
+position: absolute;
+margin-left: 45%;
+margin-top: 20%;
+}
+.boxOrange a{
+color: white;
+text-decoration: none;
+}
+/*flexbox ima3*/
+.boxBleue{
+background:blue;
+font-size: 160%;/*taille écriture*/
+width: 17%;
+height: 2rem;
+padding-top: 5px;
+text-align: center;
+z-index: 3; /*se surperpose à l'image*/
+position: absolute;
+margin-left: 45%;
+margin-top: 20%;
+
+}
+.boxBleue a{
+color: white;
+text-decoration: none;
+}
+.caption{
+	z-index: 3; /*se surperpose à l'image*/
+position: absolute;
+	font-size: 160%;
+	color: white;
+margin-left: 45%;
+margin-top: 23%;
+font-size: 160%;
+}
+#boxBouton{
+	position: absolute;
+  top: 90%;
+  left: 50%;
+z-index: 3;
+}
+/* les petites pastilles */
+.bouton {
+cursor: pointer;
+width: 1.5vh;
+height: 1.5vh; /*pr le responsive*/
+margin: 0 5px;
+border-radius: 50%;
+border:solid 1px white;
+display: inline-block;
+}
+/*on a les pastilles blanches qui restent*/
+.active, .bouton:hover {
+  background-color: white;
+}
+
+/*pr les slides*/
+@media only screen and (max-width: 1200px) and (min-width: 200px) {
+  .conteneur_Images, .image, img {
+  	width: 100%;
+    height: auto; } 
+}
+/*pour les box*/
+@media only screen and (max-width: 1200px) and (min-width: 200px) {
+.boxOrange, .boxBleue{	display: none;}}	
+@media only screen and (max-width: 850px){
+.caption{ display: none}
+@media only screen and (max-width: 450px){
+.conteneur_Images{ display: none;}

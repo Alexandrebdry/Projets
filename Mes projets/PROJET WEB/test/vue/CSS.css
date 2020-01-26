@@ -1,0 +1,99 @@
+/*fichier css */
+/* Global type */
+/*Responsive design*/
+	@media screen and (max-width: 1024px) {
+  	h1 {
+  	  font-size: 28px;
+  	  margin : 20px 0px 0px 0px;
+  	}
+
+	}
+/*Fin du responsive design 
+/*Police d'écriture et image de fond*/ 
+	body {
+  		font-family: 'Source code pro', Calibri, serif;
+  		margin: 0;
+  		padding: 0;
+  		background-image: url(../images/bg.jpg);
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		height: 100%;
+  		overflow-x: hidden ;
+	}	
+/*Fin police d'écriture*/
+/*Entete */
+	header  {
+		background-color : #222222;;
+		/*background-size: cover;*/
+		background-repeat: no-repeat;
+  		display: flex;
+  		height: 8vh;
+  		color: #CCC;
+  		margin-bottom: 10vh;
+  		border-bottom: 10px solid #333333;
+  	
+	}
+
+	header > h1 {
+	  margin: auto;
+	  margin-bottom: 10px;
+	  margin-top: 10px;
+	}
+/*Fin de l'entete*/
+body{
+	background-color : #555555;
+}
+/*Footer*/
+	footer {
+		position: fixed;
+  		height: 5vh;
+  		background-color: #222222;
+  		border-top : 2px solid #333333;
+  		display: inline-block;
+  		bottom: 0;
+  		width: 100%;
+	}
+	footer p {
+  		margin: 0;
+  		margin-top: 10px;
+  		background-color: #222222
+  		padding-bottom: : 10px;
+ 		text-align: center;
+  		color: #CCC;
+	}
+/*Fin Footer*/ 
+
+/*Mise en page*/
+	section {
+		float: left;
+		width: 60%;
+		margin: none;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 25px;
+		padding : 20px;
+		border : solid 2px #BBB;
+		background-color : #FFF;
+	}
+	article {
+		margin-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border : solid 2px #BBB;
+		background-color: #EEE;
+	}
+	article h2 {
+		text-align: center;
+	}
+	article img {
+		float : right;
+	}
+	img {
+		width: auto;
+	}
+	form {
+		text-align: center ;
+		padding-top: 30px;
+		padding-bottom: 100px;
+	}
+/*Fin mise en page*/

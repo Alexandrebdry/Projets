@@ -1,0 +1,4 @@
+Stats du joueur : jm
+  Nombre de parties jouées : 2
+  Meilleur temps : 36
+  Temps total joué : 40

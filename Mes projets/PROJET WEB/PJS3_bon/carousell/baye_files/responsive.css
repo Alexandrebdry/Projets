@@ -1,0 +1,538 @@
+/**** Passer le site en 100% à partir de 1520px ****/
+@media screen and (max-width: 1525px) {
+body {
+  width: 100%;
+}
+.header {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+}
+
+}
+
+/**** pour gérer le menu avant de passer en menu burger ***/
+
+@media screen and (min-width: 1060px) and (max-width: 1525px)  {
+
+.menu-container {
+  width: 100%;
+}
+
+.menu > ul > li a {
+  font-size: 1em;
+  padding: 1.5em 1em;
+}   
+}
+
+/******* Tablette paysage ******/
+
+@media screen and (max-width: 1060px){
+
+.navbar-form {
+    margin-right: 350px;
+}
+
+.menu-container {
+  width: 100%;
+  top: 1%;
+  position: inherit;
+  background-color:inherit;
+}
+
+.menu {
+  width: 100%;
+  height: 8vh; 
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;  
+}
+
+.menu-mobile {
+  display: block;  
+}
+
+.menu-mobile:after {
+  top: 10%;
+  left: 90%;
+  position: absolute;
+}
+
+.menu-dropdown-icon:before {
+  display: block;
+}
+.menu > ul {
+  display: none;
+}
+.menu > ul > li {
+  width: 100%;
+  float: none;
+  display: block;
+}
+.menu > ul > li a {
+  padding: 1.5em 3em;
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid gray;
+  
+}
+.menu > ul > li > ul {
+  position: relative;
+}
+.menu > ul > li > ul.normal-sub {
+  width: 100%;
+}
+.menu > ul > li > ul > li {
+  float: none;
+  width: 100%;
+  margin-top: 20px; 
+}
+
+.menu > ul > li > ul > li a{
+  border: none;
+}
+.menu > ul > li > ul > li:first-child {
+  margin: 0;
+}
+.menu > ul > li > ul > li > ul {
+  position: relative;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: none;
+}
+.menu .show-on-mobile {
+  display: block;
+  top: -50%;
+}
+
+.menu > ul > li > ul > li > ul > li a:before {
+  content:"";
+}
+
+.menu-container.vie-scolaire, .menu-container.eau, .menu-container.tourisme, .menu-container.emploi, .menu-container.environnement, .menu-container.intercom {
+  border-bottom: none;
+  }
+
+.gallery-text-box {
+  top: 55%;
+}
+
+.icons > .column {
+    max-width: 50%;
+    margin: 10px 0;
+}
+
+.box.economie {
+  width: 20%;
+}
+
+.box.amenagement {
+  width: 30%;
+}
+
+.box.tourisme {
+  width: 20%;
+}
+
+footer .row {width: 80%;}
+
+}
+
+/***** Telephone *******/
+
+@media screen and (max-width:420px) {
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+table {
+  overflow: auto; 
+}
+
+
+
+#banner {
+  display: none;
+}
+#banner-scolaire, #banner-eau, #banner-emploi, #banner-tourisme, #banner-environnement, #banner-intercom, #banner-amenagement {
+  display:none;
+}
+
+.col-lg-9, .col-lg-6, .col-md-3{
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+
+.breadcrumb {
+  font-size: 0.8em;
+  padding-top: 10%;
+}
+
+.logo {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+}
+
+.menu-mobile:after {
+  font-size: 3em;
+  top: 0;
+  margin-top: 5px;
+  left: 80% !important;
+}
+
+.menu-container {
+  margin: -20% auto;
+}
+
+.show-on-mobile > .vie-scolaire > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .eau> a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .emploi > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .amenagement > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .tourisme > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .environnemment > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+.show-on-mobile > .intercom > a::before {
+  width: 30px !important;
+  height:30px !important;
+}
+
+.navbar-form{
+  display: none;
+}
+
+.container {
+  padding-top: 0;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.card-body img {
+  max-width: 300px;
+}
+
+.ce-textpic {
+  display: inline-grid;
+}
+
+.csc-space-before-medium {
+  margin-top:0
+}
+
+.ancre {
+  justify-content: center;
+  margin-bottom: 1em;
+  font-weight: bold;  
+}
+
+.news-list-view {
+  flex-direction: column !important; 
+  padding-bottom:
+}
+
+.news .article {
+  width: 100%;
+}
+
+.news-img-wrap img {
+  width: 100%;
+  height:auto;
+}
+
+.news .article-liste {width: 70%;}
+
+footer .toolbox {
+  width: 100%;
+  font-size: 1em;
+}
+
+footer .toolbox.intercom, .toolbox.eau, toolbox.vie-scolaire, .toolbox.emploi, .toolbox.amenagement, .toolbox.tourisme, .toolbox.environnement {
+  width: 100%;
+  font-size: 1em;
+}
+
+footer p {
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+footer li  {
+ font-size: 1em !important;
+ padding: 10px 0;
+}
+
+/*.fa-stack {width: inherit !important;}*/
+/*footer .col-md-3 img {margin: 0 0 20px 50px !important;}*/
+
+}
+
+
+/****** Tablette portrait et Menu Burger *****/
+
+@media only screen and (max-width: 990px) {
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fil {padding-top: 15%;}
+
+.fil-accueil {padding-top: 1%;}
+
+#banner-scolaire, #banner-eau, #banner-emploi, #banner-tourisme, #banner-environnement, #banner-intercom, #banner-amenagement {
+  display:none;
+}
+
+.navbar-form {
+  margin-right: 200px;
+}
+
+.input-group btn {
+  margin-right: 200px;
+}
+
+.menu-container {
+  width: 100%;
+  top: 1%;
+  position: inherit;
+  background-color:inherit;
+}
+
+.menu {
+  width: 100%;
+  height: 8vh; 
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;  
+}
+
+.menu-mobile {
+  display: block;  
+}
+
+.menu-mobile:after {
+  top: 0%;
+  left: 90%;
+  position: absolute;
+}
+
+.menu-dropdown-icon:before {
+  display: block;
+}
+.menu > ul {
+  display: none;
+}
+.menu > ul > li {
+  width: 100%;
+  float: none;
+  display: block;
+}
+.menu > ul > li a {
+  padding: 1.5em 3em;
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid gray;
+  
+}
+.menu > ul > li > ul {
+  position: relative;
+}
+.menu > ul > li > ul.normal-sub {
+  width: 100%;
+}
+.menu > ul > li > ul > li {
+  float: none;
+  width: 100%;
+  margin-top: 20px; 
+}
+
+.menu > ul > li > ul > li a{
+  border: none;
+}
+.menu > ul > li > ul > li:first-child {
+  margin: 0;
+}
+.menu > ul > li > ul > li > ul {
+  position: relative;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: none;
+}
+.menu .show-on-mobile {
+  display: block;
+  top: -50%;
+}
+
+.menu > ul > li > ul > li > ul > li a:before {
+  content:"";
+}
+
+.vie-scolaire > a:hover {
+  background-color: inherit;
+  color: #a20909;
+}
+
+.col-md-3 {
+  max-width: 100%;
+  flex: 0 0 100%;
+  margin: 10px 0;
+}
+
+.col-md-3 p {
+  text-align: center;
+} 
+
+footer ul li {
+  text-align: center;
+}
+
+footer .toolbox {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-md-3.separation {
+  border-right: inherit;
+}
+
+.col-md-4.separation {
+  border-right: inherit;
+}
+
+.more {
+  width: 50%;
+}
+
+/*** Slider page accueil ***/
+
+.gallery-text-box {
+  top: 50%;
+}
+
+.gallery-text-box p {
+  font-size: 1.2em;
+}
+
+.box.intercom {
+  padding: 10px 10px;
+  width: 35%;  
+}
+
+.box.economie{
+  padding: 15px 10px;
+  width: 17%;
+}
+
+.box.tourisme{
+  padding: 15px 10px;
+  width: 17%;
+}
+
+.box.amenagement {
+  padding: 15px 10px;
+  width: 25%;
+}
+
+/***** Autres *******/
+/*div.csc-textpic-center .csc-textpic-center-inner {
+  right: -70%;
+}*/
+
+div.csc-textpic-center .csc-textpic-center-outer {
+  float: none;
+  right: 0;
+  left: 20%;
+}
+
+div.csc-textpic-center .csc-textpic-center-inner {
+  float: none;
+  right: 0;
+}
+
+}
+
+/***** A partir de 1061 px : couleurs menu *****/
+@media only screen and (min-width: 1061){
+
+.vie-scolaire > a:hover {
+  color: white;
+  background-color: #a20909;
+  font-weight: normal;
+}
+.eau > a:hover {
+  color: white;
+  background-color: #2596aa;
+  font-weight: normal;
+}   
+.emploi > a:hover {
+  color: white;
+  background-color: #c6431b;
+  font-weight: normal;
+}
+.amenagement > a:hover {
+  color: white;
+  background-color: #5f72b2;
+  font-weight: normal;
+}
+.tourisme > a:hover {
+  color: white;
+  background-color: #d5872e;
+  font-weight: normal;
+}
+.environnement > a:hover {
+  color: white;
+  background-color: #2aa868;
+  font-weight: normal;
+}
+.intercom > a:hover {
+  color: white;
+  background-color: #103d82;
+  font-weight: normal;
+}
+
+}

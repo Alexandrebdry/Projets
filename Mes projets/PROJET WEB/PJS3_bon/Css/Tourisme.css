@@ -1,0 +1,131 @@
+ body {
+	margin: 0;
+	font-family : "Segoe UI","Helvetica Neue",Arial,sans-serif,"Emoji","Segoe UI Emoji","Segoe UI Symbol" ;
+}
+.two > section {
+	border: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+}
+#header-Tourisme {
+	border-bottom: solid ; 
+	border-color : #d5872e;
+}
+#header-Tourisme h1 {
+	font-family: "Verdana" ;
+	color :#E88527;
+
+	padding: 15px 50px;
+	margin : 0;
+}
+
+.Dev-Tourisme-Txt {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav{
+	padding-left: 40px;
+	border: solid;
+	border-width: 1px;
+	border-color:#dfdfdf;
+	margin-bottom : 5%;
+}
+.nav a{
+	color : black;
+}
+ 
+
+.Dev-Tourisme{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.Dev-Tourisme-Titre{
+	border-top: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #d5872e;
+	color: white;
+	font-size: 12px;
+	padding-bottom: 1px;
+}
+#header-Tourisme h1 {
+	font : #AAA;
+}
+
+.Dev-Tourisme-Txt{
+	border: solid;
+	border-width: 1px;
+	border-color: #dfdfdf;
+}
+
+.IMG_Tourisme{
+	width:10%;
+	float:left;
+	margin-left:10px;
+}
+
+
+main{
+	color: black;
+}
+
+.texteTourisme{
+	font-size: 15px;
+}
+
+#Office-Tourisme{
+	margin-top: 7.5%;
+}
+
+#BAO{
+	background-color: #d5872e;
+	color: white;
+	width: 80%;
+	margin-left: 10%;
+	padding : 1px 0 1px 0;
+}
+#Copyright{
+	text-align: center;
+	background-color: #252525;
+	color: white;
+	margin : 0;
+	padding : 5px 0 5px 0;
+}
+
+#header-Tourisme {
+	background-image: url(../Images/tourisme.png);
+	background-repeat: no-repeat ;
+	background-size: cover ;
+	background-position: center;
+	height: 200px;
+}
+
+#Service-Dev-Tourisme{
+	margin-top: 0px;
+	padding-top: 0;
+}
+
+
+#Top-header {
+	background-color: #d5872e ;
+	padding-top: 10px;
+}
+
+#logoBayeux{width:150px;
+	margin:0 0 10px 0;
+	padding-left: 5%;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer img {
+	padding-top: 1vh;
+}

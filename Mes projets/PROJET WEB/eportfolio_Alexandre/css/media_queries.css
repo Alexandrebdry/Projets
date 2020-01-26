@@ -1,0 +1,115 @@
+/*Responsive design*/
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px) {
+	/*On affiche plus l'image eportfolio pour réduire la taille du header*/
+	header img {
+		display: none; 
+	}
+
+	/*Reduit la taille du nav et du header*/
+	nav {
+	width : 100%;
+	background-color: #424558;
+	margin-bottom: 50px;
+	margin-left: 25%;
+	}
+	/*Enleve la marge du texte qui était là pour le menu vu qu'il était à droite*/
+	#page {
+		margin-left: 0;
+	}
+
+	/*Met le menu en ligne au lieu qu'il soit en colonne*/
+	.entete ul { 
+		display: flex;
+		flex-direction: row;
+	}
+	
+	/*Place les sous menus en dessous des cases correspondantes*/
+	nav > .entete ul > li {
+	float : left;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	} 
+
+	/*Modifie la taille des cases*/
+	nav > .entete ul > li > a {
+	padding: 10px 20px ;
+	color :#FFF;
+	}
+
+	/*Debug les sous menus*/
+	.entete .sous_menu{
+	display : none;
+	}
+
+	/*Permet d'afficher les sous menus au passage de la souris*/
+	nav .entete li:hover .sous_menu {
+		display : inline-block;
+		position: absolute;
+		top : 100%;
+		left : 0px;
+		padding: 0px;
+	}
+	/*Reduit la taille des sous cases du menu déroulant*/
+	.entete .sous_menu li a {
+		padding: 5px;
+		font-size: 3px;
+		color : 222538;
+		width: 270px;
+ 	}
+}
+/*Fin des règles pour les écrans max 1024*/
+/*Nouvelles règless pour max 700*/
+@media screen and (max-width: 700px) {
+	/*Reduit la taille du nav et du header*/
+	nav {
+	width : 100%;
+	background-color: #424558;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	}
+
+	/*Modifie la taille des cases*/
+	nav > .entete ul > li > a {
+	padding: 5px 5px ;
+	color :#FFF;
+	}
+
+	/*Reduit la taille des sous cases du menu déroulant*/
+	.entete .sous_menu li a {
+	padding: 2px;
+	font-size: 1px;
+	color : 222538;
+	width: 100px;
+	}
+	
+} 
+/*Fin des règles pour les écrans max 700*/
+/*Nouvelles règless pour max 400*/
+@media screen and (max-width: 400px) {
+	/*Reduit la taille du nav et du header*/
+	nav {
+	width : 100%;
+	background-color: #424558;
+	margin-bottom: 30px;
+	margin-left: -1%;
+	}
+
+	/*Reduit la taille des cases*/
+	nav > .entete ul > li > a {
+	padding: 1px 1px ;
+	color :#FFF;
+	}
+
+	/*Reduit la taille des sous cases du menu déroulant*/
+	.entete .sous_menu li a {
+	padding: 2px;
+	font-size: 1px;
+	color : 222538;
+	width: 100px;
+	}
+	
+} 
+/*Fin règles pour 400px max*/
+/*Fin du responsive design

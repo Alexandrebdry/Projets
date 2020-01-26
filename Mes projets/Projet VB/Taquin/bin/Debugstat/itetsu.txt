@@ -1,0 +1,4 @@
+Stats du joueur : itetsu
+  Nombre de parties jouées : 0
+  Meilleur temps : 50
+  Temps total joué : 103

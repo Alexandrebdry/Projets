@@ -1,0 +1,233 @@
+/**** Vie scolaire ***/
+
+.menu .vie-scolaire > ul > li > a:hover {
+  color: #a20909;
+}
+
+.menu .vie-scolaire > ul  {
+  border: 2px solid #a20909;
+}
+
+.header-top.vie-scolaire {
+  background-color: #a20909;
+}
+
+.vie-scolaire .card h3 {
+  background-color: #a20909;
+  border-color: #a20909;
+}
+
+.vie-scolaire h2, .vie-scolaire h3 {
+  color: #a20909;
+}
+
+.vie-scolaire > a:hover {
+  color: #a20909;
+}
+
+.menu-container.vie-scolaire {
+  border-bottom: 2px solid #a20909;
+}
+
+/**** Eau et assainissement ****/
+
+.menu .eau > ul > li > a:hover {
+  color: #2596aa;
+}
+
+.menu .eau > ul  {
+  border: 2px solid #2596aa;
+}
+
+.header-top.eau {
+  background-color: #2596aa;
+}
+
+.eau .card h3 {
+  background-color: #2596aa;
+  border-color: #2596aa;
+}
+
+.eau h2, .eau h3 {
+  color: #2596aa;
+}
+
+.eau > a:hover {
+  color: #2596aa;
+}
+
+.menu-container.eau {
+  border-bottom: 2px solid #2596aa;
+}
+
+/**** Emploi et économie ****/
+
+.menu .emploi > ul > li > a:hover {
+  color: #c6431b;
+}
+.menu .emploi > ul  {
+  border: 2px solid #c6431b;
+}
+
+.header-top.emploi {
+  background-color: #c6431b;
+}
+
+.emploi .card h3 {
+  background-color: #c6431b;
+  border-color: #c6431b;
+}
+
+.emploi h2, .emploi h3 {
+  color: #c6431b;
+}
+
+.emploi > a:hover {
+  color: #c6431b;
+}
+
+.menu-container.emploi{
+  border-bottom: 2px solid #c6431b;
+}
+
+/***** Aménagement et urbanisme ***/
+.menu .amenagement > ul > li > a:hover {
+  color: #5f72b2;
+}
+
+.menu .amenagement > ul  {
+  border: 2px solid #5f72b2;
+}
+
+.header-top.amenagement {
+  background-color: #5f72b2;
+}
+
+
+.amenagement .card h3 {
+  background-color: #5f72b2;
+  border-color: #5f72b2;
+}
+
+.amenagement h2, .amenagement h3 {
+  color: #5f72b2;
+}
+
+.amenagement > a:hover {
+  color: #5f72b2;
+}
+
+.menu-container.amenagement{
+  border-bottom: 2px solid #5f72b2;
+}
+
+/**** Tourisme ****/
+
+.menu .tourisme > ul > li > a:hover {
+  color: #d5872e;
+}
+
+.menu .tourisme > ul  {
+  border: 2px solid #d5872e;
+}
+
+.header-top.tourisme {
+  background-color: #d5872e;
+}
+
+
+.tourisme .card h3 {
+  background-color: #d5872e;
+  border-color: #d5872e;
+}
+
+.tourisme h2, .tourisme h3 {
+  color: #d5872e;
+}
+
+.tourisme > a:hover {
+  color: #d5872e;
+}
+
+.menu-container.tourisme{
+  border-bottom: 2px solid #d5872e;
+}
+
+/***** Environnement ***/
+
+.menu .environnement > ul > li > a:hover {
+  color: #2aa868;
+}
+
+.menu .environnement > ul  {
+    border: 2px solid #2aa868;
+
+}
+
+.header-top.environnement {
+    background-color: #2aa868;
+}
+
+.environnement .card h3 {
+  background-color: #2aa868;
+  border-color: #2aa868;
+}
+
+.environnement h2, .environnement h3 {
+color: #2aa868;
+}
+
+.environnement > a:hover {
+  color: #2aa868;
+}
+
+.menu-container.environnement{
+  border-bottom: 2px solid #2aa868;
+}
+
+/**** L'intercommunalité ***/
+.menu .intercom > ul > li > a:hover {
+  color: #103d82;
+}
+
+.menu .intercom > ul  {
+  border: 2px solid #103d82;   
+}
+
+.header-top.intercom {
+  background-color: #103d82;
+}
+
+.intercom .card h3 {
+  background-color: #103d82;
+  border-color: #103d82;
+}
+
+.intercom h1, .intercom h2, .intercom h3 {
+  color: #103d82;
+}
+
+.intercom h1 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.intercom > a:hover {
+  color: #103d82;
+}
+
+.menu-container.intercom{
+  border-bottom: 2px solid #103d82;
+}
+
+/******* AUTRE *****/
+
+.btn-primary {
+  background-color: #103D82;
+  border-color: #103D82;
+}
+
+.btn-primary:hover {
+  background-color: #103D82;
+  border-color: #103D82;
+}

@@ -1,0 +1,44 @@
+svg path {
+	 fill: #103D82;
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+#grass {
+	font-weight: bold;
+}
+ul {
+	  list-style: circle;
+}
+
+.two22 a {
+	text-decoration: none;
+	transition: color 1s;
+}
+
+.two21 a {
+	text-decoration: none;
+	transition: color 1s;
+}
+
+#img_action {
+	padding-top: 5vh;
+}
+
+#action_p p {
+	text-align: start;
+}
+
+#fin_action {
+	margin-bottom: 2vh;
+}
+
+#logo_bt {
+	width:170px;
+	margin:0 0 20px 0; 
+}
+
+#header-Tourisme h1 {
+	margin : 0;
+}

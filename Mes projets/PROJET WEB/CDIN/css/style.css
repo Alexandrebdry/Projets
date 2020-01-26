@@ -1,0 +1,249 @@
+/*fichier css */
+/* Global type */
+/*Responsive design*/
+	@media screen and (max-width: 1024px) {
+  	h1 {
+  	  font-size: 28px;
+  	  margin : 20px 0px 0px 0px;
+  	}
+  	nav {
+  		width: 100%;
+  	}
+  	nav li a {
+  	  font-size: 14px;
+  	  padding: 30px;
+  	}
+  	nav li:hover a {
+  	  padding: 20px 25px 25px 25px;
+		}
+		section img {
+		width: 100%;
+		height: 100%;
+		}
+	}
+/*Fin du responsive design 
+/*Police d'écriture et image de fond*/ 
+	body {
+  		font-family: 'Source code pro', Calibri, serif;
+  		margin: 0;
+  		padding: 0;
+  		background-image: url(../images/bg.jpg);
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		height: 100%;
+	}	
+/*Fin police d'écriture*/
+/*Entete */
+	header  {
+		background-image: url(../images/header.jpg);
+		/*background-size: cover;*/
+		background-repeat: no-repeat;
+  		display: flex;
+  		height: 8vh;
+  		color: #CCC;
+	}
+
+	header > h1 {
+	  margin: auto;
+	  margin-bottom: 10px;
+	  margin-top: 10px;
+	}
+/*Fin de l'entete*/
+/*Footer*/
+	footer {
+  		height: 5vh;
+  		background-color: #222222;
+  		border-top : 2px solid #333333;
+  		display: inline-block;
+  		bottom: 0;
+  		width: 100%;
+	}
+	footer p {
+  		margin: 0;
+  		margin-top: 10px;
+  		background-color: #222222
+  		padding-bottom: : 10px;
+ 		text-align: center;
+  		color: #CCC;
+	}
+/*Fin Footer*/ 
+/*Menu déroulant dans la page accueil*/
+/*Mise en page MD*/ 
+	nav {
+		border-top: 2px solid #000;
+	  border-bottom:  2px solid #000;
+	  width : 100%;
+	  background-color: #222;
+	  margin-bottom: 25px;
+	}
+	nav a {
+	  display: inline-block;
+	  text-decoration: none;
+	  z-index: 0;
+	}
+	nav > .entete ul {
+	  margin: 0px;
+	  padding: 0px; 
+	}
+	nav > .entete ul::after {
+	  content: "";
+	  display: block;
+	  clear: both;
+	}
+	nav > .entete ul > li {
+  		float : left;
+  		position: relative;
+	} 
+	nav > .entete ul > li > a {
+  		padding: 20px 30px;
+  		color :#F00;
+	}
+	nav .entete li {
+	  list-style-type: none;
+	}
+	.entete .sous_menu{
+	  display : none;
+	}
+	.entete .sous_menu li {
+		width: 280px;
+
+	}
+	.entete .sous_menu li a {
+		color: #000;
+	}
+/*Fin mise en Page MD*/
+/*Animation menu déroulant*/
+	nav .entete li:hover .sous_menu {
+	  display : inline-block;
+	  position: absolute;
+	  top : 100%;
+	  left : 0px;
+	  padding: 0px;
+	  z-index: 1;
+	}
+	.entete .sous_menu li {
+	  border-bottom: 1px solid #000;
+	}
+	.entete .sous_menu li a {
+	  padding: 15px;
+	  font-size: 13px;
+	  color : 222538;
+	  width: 100vw;
+	}
+	.entete .menu-ad1:hover {
+	  border-top:5px solid #A20000;
+	  background-color: rgba(219,42,16,0.5);
+	}
+	.entete .menu-ad2:hover {
+	  border-top:5px solid #A20000;
+	  background-color: rgba(219,42,16,0.5);
+	}
+	.entete .menu-ad3:hover {
+	 border-top:5px solid #A20000;
+	  background-color: rgba(219,42,16,0.5);
+	}
+	.entete .menu-ad4:hover {
+	 border-top:5px solid #A20000;
+	 background-color: rgba(219,42,16,0.5);
+	}
+	.entete .menu-ad5:hover {
+	  border-top:5px solid #A20000;
+	  background-color: rgba(219,42,16,0.5);
+	}
+	.entete .menu-sd1:hover {
+	  border-top: 5px solid #A20000;
+	  background-color: rgba(219,42,16,0.5);
+	}
+	nav > .entete ul > li:hover a {
+	  padding: 15px 30px 20px 30px;
+	}
+	.entete .menu-ad1 .sous_menu {
+	  background-color: rgb(180,42,16);
+	}
+	.entete .menu-ad2 .sous_menu {
+	  background-color: rgb(180,42,16);
+	}
+	.entete .menu-ad3 .sous_menu {
+	  background-color: rgb(180,42,16);
+	}
+	.entete .menu-ad4 .sous_menu {
+	  background-color: rgb(180,42,16);
+	}
+	.entete .menu-ad5 .sous_menu {
+	  background-color: rgb(180,42,16);
+	}
+	.entete .sous_menu li:hover a {
+	 	color:#000;
+  		font-size: 15px;
+  		font-weight: bold;
+	}
+	.entete .menu-ad1 .sous_menu li:hover {
+	  background-color: rgb(159,15,0);
+	}
+	.entete .menu-ad2 .sous_menu li:hover {
+	  background-color: rgb(159,15,0);
+	}
+	.entete .menu-ad3 .sous_menu li:hover {
+	  background-color: rgb(159,15,0);
+	}
+	.entete .menu-ad4 .sous_menu li:hover {
+  		background-color: rgb(159,15,0);
+	}
+	.entete .menu-ad5 .sous_menu li:hover {
+	  background-color: rgb(159,15,0);
+	}
+	.entete {
+	 	 display: table;
+		  margin: 0 auto;
+	}
+/*Fin animation menu déroulant*/
+/*Animation page active*/
+	.entete .menu-ad1 #actif {
+	  background-color: rgba(176,10,010,0.7);
+	}
+	.entete .menu-ad2 #actif {
+	  background-color: rgba(176,10,010,0.7);
+	}
+	.entete .menu-ad3 #actif {
+	  background-color: rgba(176,10,010,0.7);
+	}
+	.entete .menu-ad4 #actif {
+		background-color: rgba(176,10,010,0.7);
+	}
+	.entete .menu-ad5 #actif {
+		background-color: rgba(176,10,010,0.7);
+	}
+	.entete .menu-sd1 #actif {
+	  background-color: rgba(176,10,010,0.7);
+	}
+/*Fin animation page active*/ 
+/*Fin menu déroulant*/
+/*Mise en page*/
+	section {
+		float: left;
+		width: 60%;
+		margin: none;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 25px;
+		padding : 20px;
+		border : solid 2px #BBB;
+		background-color : #FFF;
+	}
+	article {
+		margin-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border : solid 2px #BBB;
+		background-color: #EEE;
+	}
+	article h2 {
+		text-align: center;
+	}
+	article img {
+		float : right;
+	}
+	img {
+		width: auto;
+	}
+/*Fin mise en page*/

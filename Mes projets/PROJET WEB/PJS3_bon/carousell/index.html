@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>casse pas la tete</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+
+<!-- grosse boite conteneur -->
+<div class="conteneur_Images">
+
+<!-- 1ere image -->
+      <div class="image">
+        <img src="declicNum.jpg"  width="100%" height="500"> <!-- je fixe les images à la mm taille -->
+      </div>
+
+<!-- 2e image -->
+      <div class="image">
+        <!--     flexbox -->
+       <div class="boxFlex">
+        <img src="eco.jpg"  width="100%" height="500">
+          <div class="boxOrange"><a href="https://www.bayeux-intercom.fr">ÉCONOMIE </a></div>
+          <div class="caption">UN ENVIRONNEMENT PRIVILÉGIÉ 
+                <br>POUR LES ENTREPRISES
+          </div>
+        </div>
+      </div>
+    
+<!-- 3e image -->
+      <div class="image">
+          <!--     flexbox -->
+       <div class="boxFlex">
+        <img src="ame.jpg"  width="100%" height="500">
+          <div class="boxBleue"><a href="https://www.bayeux-intercom.fr">AMÉNAGEMENTS </a></div>
+          <div class="caption">DES ÉQUIPEMENTS
+                <br>DE QUALITÉ
+          </div>
+        </div>
+      </div>
+
+<!-- 4e image -->
+      <div class="image">
+          <!--     flexbox -->
+       <div class="boxFlex">
+        <img src="tour.jpg"  width="100%" height="500">
+          <div class="boxOrange"><a href="">TOURISME </a></div>
+          <div class="caption">DES PAYSAGES ET
+                <br>DES PATRIMOINES REMARQUABLES
+          </div>
+        </div>
+      </div>
+  <!-- boutons click précédent suivant -->
+  <a class="prev" onclick="slideSuivante(-1)">&#10094;</a> <!-- appel de la fonction définie en JS -->
+  <a class="next" onclick="slideSuivante(1)">&#10095;</a> <!-- chiffres->direction fleche -->
+
+  <!--  les boutons ronds-->
+ 
+        <div id="boxBouton" style="text-align:center">
+  <span class="bouton" onclick="slideActuelle(1)"></span> 
+  <span class="bouton" onclick="slideActuelle(2)"></span> 
+  <span class="bouton" onclick="slideActuelle(3)"></span> 
+   <span class="bouton" onclick="slideActuelle(4)"></span> 
+
+</div>
+
+</div>
+<br>
+
+<script type="text/javascript" src="js/carouselJavaScript.js"></script>
+
+    </head>
+
+
+    <body>
+   
+    </body>
+</html>

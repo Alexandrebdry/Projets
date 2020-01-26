@@ -1,0 +1,14 @@
+Bonjour,
+
+voici la liste des projets que j'ai réalisé dans le cadre de mes études. 
+
+Les projets web : 
+	nuitdelinfo
+	test
+nécessitant vs-wamp pour les faire tourner car ils possèdes une BDD. Celle-ci est fourni a chaque fois. 
+
+Le projet VB.net possède un exécutable dans le dossier ..\Projet VB\Taquin\bin\Debug 
+
+Les projets Java ne sont pas importables mais la source est donnée. Cependant la version fourni du CrazyCircus n'est pas la final.
+Il s'agit de la dernière version que j'ai retrouvé.
+

@@ -1,0 +1,1233 @@
+@font-face {
+ font-family: "Montserrat";
+ src: url("../fonts/Montserrat-Bold.otf");
+}
+
+html {
+    background-color: #f6f5f2;
+}
+
+body {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    -webkit-box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53);
+    box-shadow: -2px 4px 42px -6px rgba(0, 0, 0, 0.53);
+}
+
+
+/****** Basics *******/
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 0; 
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 20px 0;
+}
+
+h4 {
+  font-size: 0.9rem;
+  /* margin: 10px 0;*/
+}
+
+p {
+   margin-bottom: 0 !important;
+  font-size: 0.9rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #535c68;
+    /*font-weight: 700;*/
+}
+
+label {
+  display: inherit;
+  margin-bottom: 0;
+  }
+
+.bold {
+   font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.eau.col-lg-6 {
+    background-color: #efefef;
+    max-width: 45%;
+    margin: 0 10px;
+    padding: 10px 0;
+
+}
+
+/*.col-lg-9 p {
+    text-align: justify;
+}*/
+
+.container {
+    max-width: 100%;
+    padding: 20px 50px;
+}
+
+.internal-page {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#select {
+  margin-bottom: 20px;
+}
+
+
+/****** Header ********/
+
+.header {
+    width: 85%;
+    z-index: 1000;
+}
+
+.header-top {
+    width: 100%;
+    height: 90px;
+    padding: 0 50px;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row img {
+    object-fit: contain;
+}
+
+.header-top.shrink {
+    height: 60px;
+}
+
+.header-top::-webkit-scrollbar {
+    display: none;
+}
+
+/***** Logo *******/
+
+.logo {
+    width: 150px;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s;
+    z-index: 1000;
+}
+
+.logo.shrink {
+    width: 100px;
+}
+
+
+/*****Barre de recherche *****/
+
+
+.navbar-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-group.add-on.shrink{
+  display: flex;
+  align-items: center;
+  max-height: 10px !important;
+}
+
+.navbar-form .input-group {
+  height: 40px;
+}
+
+.tx-indexedsearch-form label {display: none;}
+
+.input-group-btn:not(:first-child)>.btn:first-child {
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+}
+
+.input-group-btn.shrink {
+  height: 40px;
+}
+
+.input-group .form-control {
+  width: 100%; 
+  height: 40px;
+}
+
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+
+.navbar-nav > li > a {
+  border-right: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.navbar-nav:last-child{
+  border-right:0;
+}
+
+/** Affichage des résultats de la recherche **/
+
+/*.tx-indexedsearch-res:nth-child(2n) {
+   background-color: #eeeeee;
+}*/
+.tx-indexedsearch-res {
+    padding: 20px 10px;
+  border-bottom: 1px solid rgba(0,0,0,.225);
+}
+
+.tx-indexedsearch-searchbox-button.cacher {display: none;}
+
+#content_main .tx-indexedsearch-searchbox {display: none;}
+
+.tx-indexedsearch-browsebox ul {
+  display:flex;
+  justify-content: row;
+  margin-top: 20px;
+  justify-content: center;
+
+}
+
+.tx-indexedsearch-browsebox ul li {
+  margin: 10px 10px;
+  list-style-type: none;
+}
+
+.tx-indexedsearch-browsebox ul li a {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.tx-indexedsearch-browsebox p {
+  text-align: center;
+}
+
+
+/****** Menu principal ******/
+
+.navigation {
+  width: 100%;
+}
+
+.menu-container {
+  /*width: 85%;*/
+  margin: 0 auto;
+  background: white;
+  /*position: fixed;*/
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile:after {
+  content: "\f20e";
+  font-family: "Ionicons";
+  color: white;
+  font-size: 4rem;
+  padding: 0;
+  position: relative;
+/*  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);*/
+  display: flex;
+  justify-content: flex-end;    
+}
+
+.menu-dropdown-icon:before {
+  content: "\f218";
+  font-family: "Ionicons";
+  display: none;
+  cursor: pointer;
+  float: right;
+  background: #fff;
+  color: #000000;
+  font-size: 1.8em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+}
+
+.menu > ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  position: static;
+
+}
+
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+
+.menu > ul:after {
+  clear: both;
+}
+
+.menu > ul > li {
+  display:inline-block;
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul > li a {
+  text-decoration: none;
+  padding: 1.5em 1em;
+  display: block;
+  font-size: 1em;
+}
+
+.menu > ul > li > ul {
+  display: none;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+
+.menu > ul > li > ul:after {
+  clear: both;
+}
+
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+
+.menu > ul > li > ul > li a {
+  color: black;
+  padding: .1em 0;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: .8em;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
+}
+
+.menu > ul > li > ul > li > ul > li a:hover {
+  text-decoration: underline;
+}
+
+.menu > ul > li > ul > li > ul > li a:before {
+  content:"-   ";
+  text-decoration: none;
+}
+
+.menu > ul > li > ul.normal-sub {
+  width: 300px;
+  left: auto;
+  padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+
+.menu a:hover {
+  color: inherit;
+  /*font-weight: bold;*/
+  }
+
+
+.breadcrumb {
+  padding: .75rem 3rem;
+  display: inherit;
+}
+
+.breadcrumb a:hover {
+ color: #535c68;
+}
+
+/****** Slider page accueil ********/
+
+#banner img {max-height: 700px;}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 0 7px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+    top: 20%;
+    opacity: .8;
+}
+
+.gallery-text-box {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 40%;
+}
+
+.gallery-text-box p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;  
+}
+
+.box a {text-decoration: none;}
+
+.box.vie-scolaire {
+  background-color: #A20909;
+  padding: 10px 10px;
+  background-size: contain;
+  width: 20%;
+  text-align:center;
+  font-weight: normal;
+}
+
+.box.eau {
+  background-color: #2596AA;
+  padding: 10px 10px;
+  background-size: contain;
+  width: 20%;
+  text-align:center;
+  font-weight: normal;
+}
+
+.box.economie{
+    background-color: #c6431b;
+    padding: 15px 10px;
+    background-size: contain;
+    width: 13%;
+    text-align:center;
+    font-weight: normal;
+}
+
+.box.amenagement {
+    background-color: #5f72b2;
+    padding: 15px 10px;
+    background-size: contain;
+    width: 17%;
+    text-align:center;
+    font-weight: normal;
+}
+
+.box.tourisme{
+    background-color: #d5872e;
+    padding: 15px 10px;
+    background-size: contain;
+    width: 13%;
+    text-align:center;
+    font-weight: normal;
+}
+
+.box.environnement{
+    background-color: #2AA868;
+    padding: 15px 10px;
+    background-size: contain;
+    width: 20%;
+    text-align:center;
+    font-weight: normal;
+}
+
+.box.intercom {
+    background-color: #103D82;
+    padding: 10px 10px;
+    background-size: contain;
+    width: 24%;
+    text-align:center;
+    font-weight: normal;
+    
+}
+
+
+/****** Bannières des pages  *******/
+
+#banner-scolaire {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/vie_scolaire.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index:0;
+}
+
+#banner-scolaire h1::after{
+    content: "Vie scolaire";
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+
+#banner-eau {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/eau2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:0;
+}
+
+#banner-eau h1::after{
+    content: "Eau et assainissement";
+    width: 450px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 225px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+    line-height: 50px;
+    left: 200px;
+}
+
+#banner-emploi {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/vitamines2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:0;
+}
+
+#banner-emploi h1::after{
+    content: "Emploi et économie";
+    width: 450px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 225px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+    line-height: 50px;
+    left: 200px;
+}
+
+#banner-amenagement {
+    width: auto;
+    height: 400px;
+    background-image: url(../images/Amenagement.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index:0;
+}
+
+#banner-amenagement h1::after{
+    content: "Aménagement du territoire";
+    width: 450px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 225px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+    line-height: 50px;
+    left: 200px;
+}
+
+#banner-tourisme {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/tourisme.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:0;
+}
+
+#banner-tourisme h1::after{
+    content: "Tourisme";
+     width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+
+#banner-environnement{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/environnement.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:0;
+}
+
+#banner-environnement h1::after{
+    content: "Environnement";
+     width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+
+#banner-intercom {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/bayeux_piste_cylable_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:0;
+}
+
+#banner-intercom h1::after{
+    content: "L'intercommunalité";
+    width: 650px;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+
+/****** CONTENU PRINCIPAL ********/
+
+/******* Fil d'arianne ********/
+.breadcrumb {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.225);
+}
+
+.breadcrumb-item a {
+  color: #000;
+  text-decoration: none;
+}
+
+.breadcrum a {
+  font-size: 0.8em;
+}
+
+
+/* Marge pour les pages internes */
+.secondary {
+  background: #efefef;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+
+/****** Accès rapide ******/
+
+.icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  margin: 20px 50px;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.icons > .column {
+  max-width: 30%;
+}
+
+.mobile {
+  display:none;
+}
+
+/******* Articles Plugin NEWS  ******/
+
+.news .article {
+  box-shadow: 0px 0px 24px 1px rgba(168,163,168,0.38);
+  padding: 1.25rem 0;
+  width: 48%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /*align-items:center;*/
+  overflow: hidden; 
+  padding: 10px;
+}
+
+.news .article .news-img-wrap {
+   margin: 3px 0 5px 0;
+}
+
+.news .article .news-img-wrap img {
+  width: 100%;
+  max-width: 550px;
+}
+
+.article h2 a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.article-liste h2 a {
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+
+
+
+.news .article-liste {
+  padding: 2.5rem 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden; 
+}
+
+
+
+.news .article-liste .teaser-text {
+  padding: 20px 0;
+}
+
+.news-list-view {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  
+}
+
+.news .article .news-img-wrap {
+   margin-left: 0;
+   margin-bottom: 20px;
+}
+
+.news .article h2 {
+  margin-bottom: 10px;
+}
+
+.news-single .article {
+  width: 100%;
+  box-shadow: none;
+}
+
+/*.news-single h2 {
+  text-align:center;
+}*/
+
+.news-single img {    
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+}
+
+.more {
+  color: white;
+  text-decoration: none;
+  background-color: #103D82;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  border-radius: 2px;
+}
+
+.more:hover {
+  color: white; text-decoration:none;
+}
+
+.article .header {
+  width: 100%; 
+  text-align:left;
+  z-index: 0;
+}
+
+/*.news-single .teaser-text .bodytext {
+  text-align:center;
+}*/
+
+.news .footer {
+  border-top: none;
+  color: black;
+}
+
+.teaser-text {
+  width: 100%;
+}
+
+.teaser-text .bodytext {
+  color: black;
+  margin-bottom: 20px !important;
+}
+
+.mediaelement img {
+  max-width: 400px;
+  height:auto;
+  }
+
+/******* Informations dans la colonne de droite *****/
+
+.portfolio-item .card {
+  border: none;
+  box-shadow: 0px 0px 24px 1px rgba(168,163,168,0.68);
+}
+
+.card-body {
+  overflow: hidden;
+  padding-bottom: 0rem;
+}
+
+.card-body button {
+  border-radius: 0;
+  color: #103d82;
+}
+
+.card-body img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 360px;
+  height:auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.image {
+  padding: 0;   
+}
+
+.card {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header:first-child {
+  background-color: #103d82;
+  color: white;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card h3 {
+  /*text-align: center;*/
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.card-title  {
+  font-size: 1.3rem;
+}
+
+ h3 img {
+  max-width: 40px;
+  height: auto;
+  padding-right: 20px;
+  float: left;
+}
+
+.card-body p {
+  margin-bottom: 0.1rem !important;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 0.9em;
+}
+
+.ce-gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ce-uploads-filesize {
+  font-size: 0.8em; 
+}
+
+.ce-row, .ce-gallery {
+  maegin-bottom: 0;
+}
+
+.ce-uploads span {
+  font-size: 0.9rem;
+}
+
+/******* Arrow return to top ****/
+
+.ancre {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+  text-decoration: none;
+  margin: 5px 50px;
+}
+
+.ancre:hover {
+  text-decoration: none;
+  
+}
+
+/***** Footer ***/
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+footer {
+  background-color: #252525;
+  width: 100%;
+  height: auto;
+  text-transform: uppercase;  
+}
+
+footer .row {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+
+footer ul li {
+  list-style-type: none;
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: 25px;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 0.75rem;
+  line-height: 25px;
+}
+
+footer a:hover {
+  color: #bdc3c7;
+}
+
+footer .toolbox.intercom {
+  font-weight: bold;
+  background-color: #103D82;
+  padding: 5px 0;
+}
+
+footer .toolbox.vie-scolaire{
+  font-weight: bold;
+  background-color: #A20909;
+  padding: 5px 0;
+}
+
+footer .toolbox.eau{
+  font-weight: bold;
+  background-color: #2596AA;
+  padding: 5px 0;
+}
+
+footer .toolbox.amenagement{
+  font-weight: bold;
+  background-color: #5F72B2;
+  padding: 5px 0;
+}
+
+footer .toolbox.tourisme{
+  font-weight: bold;
+  background-color: #D5872E;
+  padding: 5px 0;
+}
+
+footer .toolbox.emploi{
+  font-weight: bold;
+  background-color: #C6431B;
+  padding: 5px 0;
+}
+
+footer .toolbox.environnement{
+  font-weight: bold;
+  background-color: #2AA868;
+  padding: 5px 0;
+}
+
+footer span {
+  margin: 10px 3px;
+}
+
+footer .white {
+  color: white;
+}
+
+.googlemap {
+  width: 100%;
+  height: auto;
+ }
+
+/****** PAGES INTERNES *******/
+
+/**** Page Intercommunalite ***/
+
+.list {
+  display: none;
+}
+
+.map-mobile {
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+}
+
+.liste_deroulante {
+  display:none;
+}
+
+.col-md-3.separation { 
+  border-right: 1px dashed white;
+}
+
+.col-md-4.separation {
+  border-right: 1px dashed white;
+}
+
+/***** Formulaire de contact ****/
+
+.form-control{
+    width:80%; 
+    font-size: .8rem;
+}
+
+.powermail_fieldwrap {
+  margin-bottom: 1rem;
+}
+
+
+.powermail_input, .powermail_textarea {
+  width: 80%;
+  padding: .375rem .75rem;
+  font-size: .8rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out;
+}
+
+.powermail_captcha  {
+  width: 40%;
+  padding: .375rem .75rem;
+  margin-right: 2em;
+  font-size: .8rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out;
+}
+
+.powermail_submit {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background-color: #103D82;
+    border-color: #103D82;
+    color: white;
+    border: 1px solid transparent;
+  
+}
+
+
+/****** Mise en forme des tableaux *******/
+table tr:nth-child(2n){
+  background-color: #eeeeee;
+}
+
+table {
+  border: 2px solid black;
+  table-layout: fixed;
+}
+
+td,th {
+  border: thin solid black;
+  width: 25%;
+}
+
+tr { 
+  width: 25%;
+}
+
+
+/****** CSS additionnel dans les pages *******/
+
+.row-image {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+/*.row-image img {
+  max-width: 120px;
+  height: auto;
+  margin: 10px 0;
+ }*/
+
+.image-caption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+
+.card-body .article {
+  width: 100%;
+}
+
+.card-body .article  img {
+  max-width: 100px;
+  height:auto;
+}
+
+.ce-uploads a{
+  font-size: 0.9em;
+}
+
+.ce-uploads img {
+  padding-right: 0;
+  margin-right: 10px;
+}
+
+.row-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
